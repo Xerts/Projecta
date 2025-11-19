@@ -1,15 +1,11 @@
-Project Overview
+This project presents a fully offline, CPU-only sentiment analysis system built using the IMDb Large Movie Review Dataset. The objective is to classify movie reviews as positive or negative using an efficient, interpretable, and resource-friendly machine learning pipeline.
 
-This project implements a fully offline, CPU-only, and reproducible sentiment analysis system using the IMDb Movie Review Dataset.
-Instead of deep learning frameworks, this project uses a classical NLP pipeline:
+Rather than relying on computationally intensive deep learning frameworks, the system is based on a classical NLP approach combining:
 
-TF-IDF vectorization
+TF-IDF vectorization for feature extraction
+Logistic Regression for sentiment classification
 
-Logistic Regression classifier
+This design ensures that the entire workflow remains lightweight, reproducible, and suitable for environments without GPU acceleration. The project was implemented as part of the Deep Learning Course Project, with a focus on clarity, efficiency, and full offline usability.
 
-The goal is to classify movie reviews as Positive or Negative using a lightweight, interpretable, and resource-efficient model.
-
-This project is designed to meet the requirements of the Deep Learning Course Project Report.
-
-Download the IMDb dataset manually:
-https://ai.stanford.edu/~amaas/data/sentiment/
+The IMDb Movie Review Dataset (50,000 labeled reviews) must be downloaded manually from the official source: https://ai.stanford.edu/~amaas/data/sentiment/
+Once extracted, the dataset can be loaded directly from local storage for preprocessing, feature engineering, and model training.
